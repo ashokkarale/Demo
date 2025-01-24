@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Destination Highlights</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .block {
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 10px;
+        }
+        .block:nth-child(odd) {
+            background-color: #f0e68c;
+        }
+        .target {
+            border: 2px dashed #ff4500;
+            background-color: #fff7e6;
+        }
+        .city {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .adjective {
+            font-size: 14px;
+            color: #555;
+        }
+        @media (max-width: 600px) {
+            .block {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Explore Popular Travel Destinations</h1>
+    <p>Resize the browser window to see how the layout adapts for various screen sizes.</p>
+    <div class="container">
+        <div id="destination1" class="block">
+            <div class="city">Paris</div>
+        </div>
+	<div id="destination1" class="block">
+            <div class="adjective">The City of Light</div>
+        </div>
+        <div id="destination2" class="block target">
+            <div class="city">Tokyo</div>
+        </div>
+	<div id="destination2" class="block target">
+            <div class="adjective">Land of the Rising Sun</div>
+        </div>
+        <div id="destination3" class="block">
+            <div class="city">New York</div>        </div>
+	<div id="destination3" class="block">
+            <div class="adjective">The Big Apple</div>
+        </div>
+        <div id="destination4" class="block">
+            <div class="city">Sydney</div>        </div>
+<div id="destination4" class="block">
+            <div class="adjective">Harbor City</div>
+        </div>
+        <div id="destination5" class="block target">
+            <div class="city">Cairo</div>        </div>
+<div id="destination5" class="block target">
+            <div class="adjective">City of a Thousand Minarets</div>
+        </div>
+
+    </div>
+</body>
+</html>
